@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="video.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      VideoJS.setupAllWhenReady();
+    </script>
+    <link rel="stylesheet" href="video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="video-js-box">
+      <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+      <video class="video-js" width="720" height="306" controls preload poster="sintel.jpg">
+	<source type="video/h264" src="http://www.kaltura.com/p/243342/sp/24334200/playManifest/entryId/0_c0r624gh/flavorId/0_w48dtkyq/format/url/protocol/http/a.mp4" data-flavorid="iPad" ></source>
+	<source type="video/h264" src="http://www.kaltura.com/p/243342/sp/24334200/playManifest/entryId/0_c0r624gh/flavorId/0_w3aolq8p/format/url/protocol/http/a.mp4" data-flavorid="iPhone" ></source>
+	<source type="video/webm" src="http://www.kaltura.com/p/243342/sp/24334200/playManifest/entryId/0_c0r624gh/flavorId/0_1c89hhxb/format/url/protocol/http/a.webm" data-flavorid="webm" ></source>
+	<source type="video/ogg" src="http://www.kaltura.com/p/243342/sp/24334200/playManifest/entryId/0_c0r624gh/flavorId/0_g4hvuve3/format/url/protocol/http/a.ogg" data-flavorid="ogg" ></source>
+      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+      <object class="vjs-flash-fallback" width="720" height="306" type="application/x-shockwave-flash" data="flowplayer-3.2.1.swf">
+        <param name="movie" value="flowplayer-3.2.1.swf" />
+        <param name="allowfullscreen" value="true" />
+        <param name="flashvars" value='config={"playlist":["sintel.jpg", {"url": "http://html5video.org/players/media/sintel.mp4","autoPlay":false,"autoBuffering":true}]}' />
+        <!-- Image Fallback. Typically the same as the poster image. -->
+        <img src="sintel.jpg" width="720" height="306" alt="Poster Image" title="No video playback capabilities." />
+      </object>
+      </video>
+      <!-- Download links provided for devices that can't play video in the browser. -->
+      <p class="vjs-no-video"><strong>Download Video:</strong>
+      <a href="http://html5video.org/players/media/sintel.mp4">MP4</a>,
+      <a href="http://html5video.org/players/media/sintel.ogg">Ogg</a><br>
+      <!-- Support VideoJS by keeping this link. -->
+      <a href="http://videojs.com">HTML5 Video Player</a> by VideoJS
+      </p>
+    </div>
+    <!-- 
+    <video controls poster="http://html5video.org/players/media/sintel.jpg">
+      <source type="video/mp4" src="http://html5video.org/players/media/sintel.mp4">
+      <source type="video/ogg" src="http://html5video.org/players/media/sintel.ogg">
+      <track kind="subtitles" srclang="de" src="http://html5video.org/players/media/sintel_de.srt"> 
+      <track kind="subtitles" srclang="en" src="http://html5video.org/players/media/sintel_en.srt"> 
+      <track kind="subtitles" srclang="es" src="http://html5video.org/players/media/sintel_es.srt"> 
+      <track kind="subtitles" srclang="fr" src="http://html5video.org/players/media/sintel_fr.srt"> 
+      <track kind="subtitles" srclang="it" src="http://html5video.org/players/media/sintel_it.srt"> 
+      <track kind="subtitles" srclang="nl" src="http://html5video.org/players/media/sintel_nl.srt"> 
+      <track kind="subtitles" srclang="pl" src="http://html5video.org/players/media/sintel_pl.srt"> 
+      <track kind="subtitles" srclang="pt" src="http://html5video.org/players/media/sintel_pt.srt"> 
+      <track kind="subtitles" srclang="ru" src="http://html5video.org/players/media/sintel_ru.srt"> 
+      </video>
+      -->
+  </body>
+</html>
+
+Video Url :- http://html5video.org/players/media/sintel.mp4
